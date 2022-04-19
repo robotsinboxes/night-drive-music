@@ -1,0 +1,10 @@
+.videoPlayer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.video {
+   box-shadow: 4px 4px 6px black;
+} 
