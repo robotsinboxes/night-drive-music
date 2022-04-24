@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from '../styles/AudioPlayer.module.css';
 import { BsFillPlayFill, BsFillPauseFill, BsFillSkipBackwardFill, BsFillSkipForwardFill } from 'react-icons/bs';
+import Song from '../assets/audio_tracks/sample-15s.mp3'
 
 const AudioControls = () => {
    // state
@@ -61,7 +62,8 @@ const AudioControls = () => {
 
    return (
       <div className={styles.audioControls}>
-         <audio ref={audioPlayer} src='./media/audio_tracks/sample-15s.mp3' preload='metadata'></audio>
+         <audio ref={audioPlayer} 
+         src={Song} preload='metadata'></audio>
 
          {/* player controls */}
          <button className={styles.backBtn} >

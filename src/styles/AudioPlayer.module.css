@@ -41,7 +41,7 @@
 }
 
 .audioControls {
-   --controls-primary: rgb(231, 234, 237);
+   --controls-primary: rgb(207, 206, 210);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -111,9 +111,9 @@
 
 /* CHROME */
 .progressBar {
-   --bar-bg: rgb(219, 216, 224);
+   --bar-bg: rgb(207, 206, 210);
    --seek-before-width: 0;
-   --seek-before-color: rgb(160, 151, 160);
+   --seek-before-color: rgb(130, 115, 130);
    --knobby: rgb(56,53, 53);
    
    appearance: none;

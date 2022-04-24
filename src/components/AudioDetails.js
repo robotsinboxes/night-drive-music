@@ -1,11 +1,12 @@
 import styles from '../styles/AudioPlayer.module.css';
+import RodneyLive from '../assets/images/live-rodney.jpg';
 
 const AudioDetails = () => {
    return (
       <div className={styles.detailsContainer}> 
          <div>
             <div className={styles.image}>
-               <img src="../../media/images/live-rodney.jpg" alt="Rodney - Live Performance" />
+               <img src={RodneyLive} alt="Rodney - Live Performance" />
             </div>
             <div className={styles.details}>
                <h1 className={styles.songTitle}>Drones</h1>

@@ -6,7 +6,9 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   font-family: 'Montserrat', sans-serif;;
+   font-family: 'Montserrat', sans-serif;
+   background-image: url(../assets/images/bg-large.webp);
+   background-size: cover;
 }
 
 .main {
