@@ -20,7 +20,28 @@ const App = () =>{
             </div>
             <div className='videoComponent'>
                <VideoPlayer 
-                  width='80vw'
+                  url="https://www.youtube.com/watch?v=ne_MgdKLg04"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=WW4esBSuAjw"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=f9UpOMyKV7o"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=PkTzuktAuqs"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=IE8Z-srSYWY"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=YtzE4nckj1U"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=5HT3UssMgt8"
+               />
+               <VideoPlayer 
+                  url="https://www.youtube.com/watch?v=fF7jhpAPz8o"
                />
             </div>
          </div>
