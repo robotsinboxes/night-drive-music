@@ -8,8 +8,8 @@ const VideoPlayer = () => {
          <ReactPlayer 
             className={styles.video} 
             url="https://www.youtube.com/watch?v=ne_MgdKLg04"
-            // width="100%"
-            // height="100%"
+            width="100%"
+            height="100%"
             controls={true}
             onStart={() => console.log('onStart')}
          />

@@ -5,7 +5,7 @@
    padding: 1rem;
    max-width: 400px;
    min-width: 200px;
-   background-image: linear-gradient(rgb(104, 68, 148), rgb(74, 50, 99), rgb(27, 14, 43))
+   background-image: linear-gradient(rgb(104, 68, 148), rgb(74, 50, 99), rgb(27, 14, 43));
 }
 
 .detailsContainer {
