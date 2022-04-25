@@ -9,7 +9,6 @@ const VideoPlayer = ({ url }) => {
             className={styles.video} 
             url={url}
             controls={true}
-            onStart={() => console.log('onStart')}
          />
       </div>
    )

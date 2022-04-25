@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Title from './components/Title';
 import AudioPlayer from './components/AudioPlayer';
 import VideoPlayer from './components/VideoPlayer';
 
@@ -15,10 +16,12 @@ const App = () =>{
             <Navbar />
          </div>
          <div className='container'>
-            <div className='audioComponent'>
+            <div id='audioPlayer' className='audioComponent'>
+               <Title title='MUSIC' />
                <AudioPlayer />
             </div>
-            <div className='videoComponent'>
+            <div id='videoPlayer' className='videoComponent'>
+               <Title title='VIDEOS' />
                <VideoPlayer 
                   url="https://www.youtube.com/watch?v=ne_MgdKLg04"
                />

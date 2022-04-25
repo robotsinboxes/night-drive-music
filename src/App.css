@@ -3,27 +3,29 @@
    margin: 0;
 }
 
+.heroComponent {
+   background-color: black;
+}
+
 .container {
    min-height: 100vh;
    max-width: 100vw;
    overflow: hidden;
-   padding: 0 0.5rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    font-family: 'Montserrat', sans-serif;
    background-image: url(./assets/images/bg-large.webp);
-   background-size: cover;
+   background-size: cover; 
 }
 
 .audioComponent {
-   padding: 5rem;
+   padding: 3rem 1rem; 
 }
 
 .videoComponent {
-   background-color: black;
-   padding: 5rem;
+   padding: 2rem 1rem;
 }
 
 

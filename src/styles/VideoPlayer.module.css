@@ -4,9 +4,16 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   padding-bottom: 2rem;
+}
+
+.title {
+   font-family: 'Montserrat', sans-serif;
+   padding: 1rem;
+   color: white;
+   font-size: 3rem;
 }
 
 .video {
-   box-shadow: 4px 4px 6px black;
    padding: 0 1rem;
 } 
