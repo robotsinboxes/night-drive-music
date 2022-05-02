@@ -1,25 +1,33 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from '../styles/AudioPlayer.module.css';
 import { BsFillPlayFill, BsFillPauseFill, BsFillSkipBackwardFill, BsFillSkipForwardFill } from 'react-icons/bs';
-import Song from '../assets/audio_tracks/sample-15s.mp3'
+// import Song from '../assets/audio_tracks/sample-15s.mp3'
 
 
-
-
-
-
-
-
+const AudioControls = (props) => {
+   return (
+      <div className={styles.audioControls}> 
+         <button className={styles.backBtn} onClick={() => props.SkipSong(false)}>
+            <BsFillSkipBackwardFill />
+         </button>
+         <button className={styles.playBtn} onClick={() => props.setIsPlaying(!props.isPlaying)}>
+            { props.isPlaying ? <BsFillPauseFill /> : <BsFillPlayFill /> }
+         </button>
+         <button className={styles.skipBtn} onClick={() => props.SkipSong()}>
+            <BsFillSkipForwardFill />
+         </button>
+      </div>
+   )
+}
 
 
 
 // const AudioControls = () => {
-// state
+//    state
 //    const [isPlaying, setIsPlaying] = useState(false);
 //    const [duration, setDuration] = useState(0);
 //    const [currentTime, setCurrentTime] = useState(0);
-
-// references
+//    references
 //    const audioPlayer = useRef();
 //    const progressBar = useRef();
 //    const animationRef = useRef();
@@ -105,4 +113,4 @@ import Song from '../assets/audio_tracks/sample-15s.mp3'
 //    )
 // }
 
-// export default AudioControls;
+export default AudioControls;

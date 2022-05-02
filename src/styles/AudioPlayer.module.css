@@ -1,6 +1,6 @@
 .audioPlayer {
    display: block;
-   border: 1px solid black;
+   border: 1px solid white;
    border-radius: 1rem;
    padding: 1rem;
    max-width: 400px;
@@ -8,17 +8,12 @@
    background-image: linear-gradient(rgb(57, 24, 58), rgb(74, 50, 99), rgb(31, 10, 32));
 }
 
-.detailsContainer {
-   display: flex;
-   justify-content: center;
-}
-
-.image img {
+.imageContainer img {
+   display: block;
+   margin: 0px auto;
    width: 100%;
-   height: 100%;
-   background-size: fill;
-   border-radius: .5rem;
-   box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.915);
+   max-width: 14rem;
+   border-radius: 30%;
 }
 
 .details {
@@ -28,13 +23,13 @@
    align-items: center;
 }
 
-.details h1 {
+.details h2 {
    margin: 0.5rem 0 0 0;
    color: rgb(171, 170, 216);
    text-shadow: 2px 2px 6px #a5a0a0;
 }
 
-.details h6 {
+.details h3 {
    margin: 0.5rem 0 .8rem 0;
    color: rgb(171, 170, 216);
    letter-spacing: .25rem;
@@ -47,7 +42,7 @@
    justify-content: center;
 }
 
-.playPauseBtn {
+.playBtn {
    background: none;
    color: var(--controls-primary);
    border: none;
@@ -105,6 +100,37 @@
 .duration {
    color: var(--controls-primary);
    margin-left: .3rem;
+}
+
+.textAnim {
+   padding: 2rem 0 .50rem 0;
+   font-size: 1.1rem;
+   font-style: italic;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   /* animation: effect 3s linear infinite; */
+}
+
+.nextTrack {
+   display: flex;
+   flex-direction: row;
+   margin: 0.75rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.nextTrack img {
+   width: 4em;
+   height: auto;
+   border-radius: 1rem;
+   margin: 0 10px 0 -10px ;
+}
+
+.nextTrack p {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: white;
 }
 
 /********* Progress Bar **********/

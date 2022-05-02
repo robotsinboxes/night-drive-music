@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import '../styles/Hero.css';
-import heroVideo from '../assets/videos/nd-anim-triangle.mp4';
+import '../styles/Animation.css';
+import Video from '../assets/videos/nd-anim-triangle.mp4';
 
-const Hero = () => {
+const Animation = () => {
    return (
       <div className="video-container">
          <ReactPlayer 
-            url={heroVideo}
+            url={Video}
             width="100%"
             height="100%"
             muted={true}
@@ -19,4 +19,4 @@ const Hero = () => {
    )
 }
 
-export default Hero;
+export default Animation;

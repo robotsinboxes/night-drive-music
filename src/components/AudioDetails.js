@@ -1,34 +1,21 @@
 import styles from '../styles/AudioPlayer.module.css';
 
+const AudioDetails = (props) => {
+   return (
+      <div className={styles.detailsContainer}> 
+         <div className={styles.imageContainer}>
+            <img 
+               src={props.track.img_src} 
+               alt={props.track.title}
+            />
+         </div>
+         {/* <div className='range'></div> */}
+         <div className={styles.details}>
+            <h2 className={styles.songTitle}>{props.track.title}</h2>
+            <h3 className={styles.artist}>{props.track.artist}</h3>
+         </div>
+      </div>
+   )
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-//import RodneyLive from '../assets/images/live-rodney.jpg';
-
-// const AudioDetails = () => {
-//    return (
-//       <div className={styles.detailsContainer}> 
-//          <div>
-//             <div className={styles.image}>
-//                <img src={RodneyLive} alt="Rodney - Live Performance" />
-//             </div>
-//             <div className={styles.details}>
-//                <h1 className={styles.songTitle}>Drones</h1>
-//                <h6 className={styles.artist}>Night Drive</h6>
-//             </div>
-//          </div>
-//       </div>
-//    )
-// }
-
-//export default AudioDetails;
+export default AudioDetails;

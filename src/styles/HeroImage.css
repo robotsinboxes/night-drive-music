@@ -1,0 +1,11 @@
+.heroImg {
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   padding: 4rem;  
+}
+
+.heroImg img {
+   max-width: 80%;
+   height: auto;
+}
