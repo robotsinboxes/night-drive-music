@@ -13,23 +13,23 @@ const App = () =>{
          "title": "Drones",
          "album": "Night Drive",
          "artist": "Night Drive",
-         "img_src": './tracks_images/s1cover-nd-drones-running.webp',
-         "track_src": './tracks/s3-sample-15s.mp3'
+         "img_src": './tracks_images/nd-drones-square.jpg',
+         "track_src": './tracks/drones.mp3'
       },
       {
          "title": "Aboria",
          "album": "Night Drive",
          "artist": "Night Drive",
          "img_src": './tracks_images/s2cover-nd-live-rodney.webp',
-         "track_src": './tracks/s2-sample-9s.mp3'
+         "track_src": './tracks/aboria.mp3'
 
       },
       {
          "title": "Trapeze Artist Regrets",
          "album": "Night Drive",
          "artist": "Night Drive",
-         "img_src": './tracks_images/s3cover-nd-stage1.webp',
-         "track_src": './tracks/s1-sample-6s.mp3'
+         "img_src": './tracks_images/nd-after-dark-square.jpg',
+         "track_src": './tracks/trapeze-artist-regrets.mp3'
 
       }
    ]);
