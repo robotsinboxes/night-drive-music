@@ -3,9 +3,9 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HeroImage from './components/HeroImage';
 import AudioPlayer from './components/AudioPlayer';
-import Animation from './components/Animation';
 import Title from './components/Title';
 import VideoPlayer from './components/VideoPlayer';
+import Contact from './components/Connect';
 
 const App = () =>{
    const [tracks] = useState([
@@ -72,9 +72,6 @@ const App = () =>{
                   tracks={tracks}
                />
             </div>
-            <div className='animationContainer'>
-               <Animation />
-            </div>
             <div id='videoPlayer' className='videoComponent'>
                <Title title='VIDEOS' />
                <VideoPlayer 
@@ -101,6 +98,9 @@ const App = () =>{
                <VideoPlayer 
                   url="https://www.youtube.com/watch?v=fF7jhpAPz8o"
                />
+            </div>
+            <div className='contactContainer'>
+               <Contact />
             </div>
          </div>
       </div>
