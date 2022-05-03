@@ -5,7 +5,7 @@ import HeroImage from './components/HeroImage';
 import AudioPlayer from './components/AudioPlayer';
 import Title from './components/Title';
 import VideoPlayer from './components/VideoPlayer';
-import Contact from './components/Connect';
+import Connect from './components/Connect';
 
 const App = () =>{
    const [tracks] = useState([
@@ -99,8 +99,8 @@ const App = () =>{
                   url="https://www.youtube.com/watch?v=fF7jhpAPz8o"
                />
             </div>
-            <div className='contactContainer'>
-               <Contact />
+            <div id='connect' className='contactContainer'>
+               <Connect />
             </div>
          </div>
       </div>

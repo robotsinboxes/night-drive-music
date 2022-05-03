@@ -30,16 +30,22 @@ const Navbar = () => {
                <div className='grow'/>
                <Typography align='center'>
                   <Link 
+                     to='/live-shows'
+                     href='#tour'
+                     underline='none'
+                     >LIVE
+                  </Link>         
+                  <Link 
                      to='/music'
                      href='#audioPlayer'
                      underline='none'
-                     >MUSIC
+                     >LISTEN
                   </Link>           
                   <Link 
                      to='/videos'
                      href='#videoPlayer'
                      underline='none'
-                     >VIDEOS
+                     >WATCH
                   </Link> 
                   <Link 
                      to='/shop'
@@ -48,16 +54,16 @@ const Navbar = () => {
                      >SHOP
                   </Link>
                   <Link 
-                     to='/press'
-                     href='#press'
+                     to='/news'
+                     href='#news'
                      underline='none'
-                     >PRESS
+                     >READ
                   </Link>
                   <Link 
                      to='/contact'
                      href='#contact'
                      underline='none'
-                     >CONTACT
+                     >CONNECT
                   </Link>          
                </Typography>
                <div className='button'>
