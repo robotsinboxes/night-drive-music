@@ -49,18 +49,12 @@ const AudioPlayer = (props) => {
                isPlaying={isPlaying}
                setIsPlaying={setIsPlaying}
                SkipSong={SkipSong} />
-         </div>
-         <div>
-            <div className={styles.textAnim}>
-               <strong>Next track:</strong>
-            </div>
-            <div className={styles.nextTrack}> 
-               <img
-                  src={props.tracks[props.nextTrackIndex].img_src}
-                  alt={props.tracks[props.nextTrackIndex].title}
-               />
+            <div className={styles.nextTrack}>
                <p> 
-                  <b>{props.tracks[props.nextTrackIndex].title}</b>
+                  <b>
+                     <span>Next:</span>
+                     {props.tracks[props.nextTrackIndex].title}
+                  </b>
                </p>
             </div>
          </div>

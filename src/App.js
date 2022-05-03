@@ -10,27 +10,34 @@ import VideoPlayer from './components/VideoPlayer';
 const App = () =>{
    const [tracks] = useState([
       {
+         "title": "After Dark",
+         "album": "Position I",
+         "artist": "Night Drive",
+         "track_src": './tracks/01-after-dark.mp3'
+      },
+      {
          "title": "Drones",
          "album": "Night Drive",
          "artist": "Night Drive",
-         "img_src": './tracks_images/nd-drones-square.jpg',
-         "track_src": './tracks/drones.mp3'
+         "track_src": './tracks/02-drones.mp3'
       },
       {
-         "title": "Aboria",
+         "title": "No Plans",
          "album": "Night Drive",
          "artist": "Night Drive",
-         "img_src": './tracks_images/s2cover-nd-live-rodney.webp',
-         "track_src": './tracks/aboria.mp3'
-
+         "track_src": './tracks/03-no-plans.mp3'
       },
       {
-         "title": "Trapeze Artist Regrets",
+         "title": "Nocturnal",
          "album": "Night Drive",
          "artist": "Night Drive",
-         "img_src": './tracks_images/nd-after-dark-square.jpg',
-         "track_src": './tracks/trapeze-artist-regrets.mp3'
-
+         "track_src": './tracks/04-nocturnal.mp3'
+      },
+      {
+         "title": "Sea of Light",
+         "album": "Night Drive",
+         "artist": "Night Drive",
+         "track_src": './tracks/05-sea-of-light.mp3'
       }
    ]);
 
@@ -46,8 +53,6 @@ const App = () =>{
          }
       })
    }, [currentTrackIndex]);
-
-   console.log('hello');
 
    return (
       <div className='main'>

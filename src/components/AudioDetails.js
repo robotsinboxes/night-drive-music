@@ -1,18 +1,20 @@
 import styles from '../styles/AudioPlayer.module.css';
+import positionI from '../assets/images/position-I-cover-mono.jpg';
 
 const AudioDetails = (props) => {
+
    return (
       <div className={styles.detailsContainer}> 
          <div className={styles.imageContainer}>
             <img 
-               src={props.track.img_src} 
-               alt={props.track.title}
+               src={positionI} 
+               alt={props.track.album}
             />
          </div>
-         {/* <div className='range'></div> */}
+         {/* <div className={styles.progressBar}></div> */}
          <div className={styles.details}>
             <h2 className={styles.songTitle}>{props.track.title}</h2>
-            <h3 className={styles.artist}>{props.track.artist}</h3>
+            <h5 className={styles.album}>{props.track.album}</h5>
          </div>
       </div>
    )
