@@ -1,42 +1,32 @@
 import React from 'react';
 import Animation from './Animation';
+import '../styles/Connect.css';
 import { BsFacebook, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
-import { Grid } from '@mui/material';
+import { Grid, Link } from '@mui/material';
 
 const Connect = () => {
    return (
       <div className='contactContainer'>
-         <Grid container spacing={2}>
-            <Grid item xs={6} md={6}>
-               <Animation />
-            </Grid>
-            <Grid container spacing={2}>
-               <Grid item xs={6} md={6} lg={6}>
-                  <a className='btn btn-outline-light'
-                  href='https://www.facebook.com/NightDriveMusic/'
-                  target='_blank'
-                  rel='noreferrer'
-                  aria-label='facebook'>
-                     <IconContext.Provider value={{className: 'contact-icon'}}>
-                        <BsFacebook />
-                     </IconContext.Provider>
-                  </a>
-               </Grid>
-               <Grid item xs={6} md={6} lg={6}>
-                  <a className='btn btn-outline-light'
+         {/* <Grid container direction='row' alignItems='center'> */}
+            <Grid container 
+               direction='row' 
+               justifyContent='space-around' 
+               alignItems='center'>
+               <Grid item xs={2} md={2}>
+                  <Link 
                      href='https://www.facebook.com/NightDriveMusic/'
                      target='_blank'
                      rel='noreferrer'
                      aria-label='facebook'>
-                        <IconContext.Provider value={{className: 'contact-icon'}}>
-                           <BsFacebook />
-                        </IconContext.Provider>
-                  </a>
+                     <IconContext.Provider value={{className: 'contact-icon'}}>
+                        <BsFacebook />
+                     </IconContext.Provider>
+                  </Link>
                </Grid>
-               <Grid item xs={6} md={6} lg={6}>
-                  <a className='btn btn-outline-light'
+               <Grid item xs={2} md={2}>
+                  <Link 
                      href='https://www.instagram.com/nightdrivemusic/?hl=en'
                      target='_blank'
                      rel='noreferrer'
@@ -44,10 +34,13 @@ const Connect = () => {
                         <IconContext.Provider value={{className: 'contact-icon'}}>
                            <AiFillInstagram />
                         </IconContext.Provider>
-                  </a>
+                  </Link>
                </Grid>
-               <Grid item xs={6} md={6} lg={6}>
-                  <a className='btn btn-outline-light'
+               <Grid item xs={3} md={4}>
+                  <Animation />
+               </Grid>
+               <Grid item xs={2} md={2}>
+                  <Link 
                      href='https://twitter.com/wearenightdrive?lang=en'
                      target='_blank'
                      rel='noreferrer'
@@ -55,10 +48,10 @@ const Connect = () => {
                         <IconContext.Provider value={{className: 'contact-icon'}}>
                            <BsTwitter />
                         </IconContext.Provider>
-                  </a>
+                  </Link>
                </Grid>
-               <Grid item xs={6} md={6} lg={6}>
-                  <a className='btn btn-outline-light'
+               <Grid item xs={2} md={2}>
+                  <Link 
                      href='https://www.youtube.com/user/nightdrivemusic'
                      target='_blank'
                      rel='noreferrer'
@@ -66,10 +59,10 @@ const Connect = () => {
                         <IconContext.Provider value={{className: 'contact-icon'}}>
                            <BsYoutube />
                         </IconContext.Provider>
-                  </a>
+                  </Link>
                </Grid>
             </Grid>
-         </Grid>
+         {/* </Grid> */}
       </div>
    )
 }

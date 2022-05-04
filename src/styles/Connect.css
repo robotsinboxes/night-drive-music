@@ -1,3 +1,28 @@
 .contactContainer {
-   direction: row;
+   display: flex;
+   padding: 0 3rem;
 }
+
+
+.contact-icon {
+   font-size: 3rem;
+   color: rgb(253, 253, 253);
+   padding: 0.5rem;
+   border: 1px solid white;
+   border-radius: 1rem;
+   box-shadow: 3px 3px 3px #9bc6f5;
+}
+
+@media screen and (max-width: 375px) {
+   .contactContainer {
+      padding: 0;
+   }
+   .contact-icon {
+      font-size: 1rem;
+      padding: 0.3rem;
+      border: .50px solid white;
+      border-radius: .5rem;
+      box-shadow: 2px 2px 2px #9bc6f5;
+   }
+}
+
