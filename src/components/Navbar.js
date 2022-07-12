@@ -41,8 +41,8 @@ const Navbar = () => {
                      >LIVE
                   </Link>         
                   <Link 
-                     // to='/music'
-                     href='#music'
+                     to='/music'
+                     href='#audioPlayer'
                      underline='hover'
                      >LISTEN
                   </Link>           
