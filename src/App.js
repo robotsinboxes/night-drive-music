@@ -63,7 +63,7 @@ const App = () =>{
             <HeroImage />
          </div>
          <div className='container'>
-            <div id='audioPlayer' className='audioComponent'>
+            <div id='music' className='audioComponent'>
                <Title title='MUSIC' />
                <AudioPlayer
                   currentTrackIndex={currentTrackIndex}

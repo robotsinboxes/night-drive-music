@@ -25,44 +25,49 @@ const Navbar = () => {
             }}>
             <Toolbar justify='center'> 
                <Typography variant='h6' className='brand' >
-                  <img src={brand} alt='Night Drive Music'  className='brandImg' />
+                  <img src={brand} alt='Night Drive Music' className='brandImg' />
                </Typography>
                <div className='grow'/>
                <Typography align='center'>
+
+
+      {/* TO-DO URL breadcrumbs are showing href instead of the 'to' property */}
+                  
+                  
                   <Link 
                      to='/live-shows'
                      href='#tour'
-                     underline='none'
+                     underline='hover'
                      >LIVE
                   </Link>         
                   <Link 
-                     to='/music'
-                     href='#audioPlayer'
-                     underline='none'
+                     // to='/music'
+                     href='#music'
+                     underline='hover'
                      >LISTEN
                   </Link>           
                   <Link 
                      to='/videos'
                      href='#videoPlayer'
-                     underline='none'
+                     underline='hover'
                      >WATCH
                   </Link> 
                   <Link 
                      to='/shop'
                      href='#shop'
-                     underline='none'
+                     underline='hover'
                      >SHOP
                   </Link>
                   <Link 
                      to='/news'
                      href='#news'
-                     underline='none'
+                     underline='hover'
                      >READ
                   </Link>
                   <Link 
                      to='/contact'
                      href='#contact'
-                     underline='none'
+                     underline='hover'
                      >CONNECT
                   </Link>          
                </Typography>
