@@ -1,4 +1,4 @@
-# night-drive-music
+# Night Drive Music
 
 This project is a band website showcasing the musician's songs and music videos, merchandise, news and upcoming live shows.
 
