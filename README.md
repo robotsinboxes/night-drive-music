@@ -4,8 +4,6 @@
 
 This project is a band website showcasing the musician's songs and music videos, merchandise, news and upcoming live shows.
 
-Music can be listened to through an audio player built with Javascript, and music videos viewed through a video player built using React-Player.
-
 **This project is in progress.**
 
 ## Future Goals
